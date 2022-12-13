@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/calendar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.gsce {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.drop {
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.75s;
+    margin: 0 5px;
+}
+
+.navbar ul li a:hover {
+    color: #11101b;
+    background-color: #fefefe;
+}
+
+.navbar ul li a.active {
+    color: #11101b;
+    background-color: #fefefe;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    background-color: #fefefe;
+    margin: 30px 60px 0px 60px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Round1 {
+    display: block;
+    background-color: #fefefe;
+    margin: 30px 60px 0px 60px;
+    height: 800px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 60px;
+
+}
+
+.Round1 img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: 400px;
+}
+
+.Round1 p {
+    display: block;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.Round1 a {
+    display: block;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.Round2 {
+    display: block;
+    background-color: #fefefe;
+    margin: 30px 60px 0px 60px;
+    height: 800px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 60px;
+
+}
+
+.Round2 img {
+    max-width: 100%;
+    height: 400px;
+}
+
+.Round2 p {
+    display: block;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.Round2 a {
+    display: block;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.Round3 {
+    display: block;
+    background-color: #fefefe;
+    margin: 30px 60px 0px 60px;
+    height: 800px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 60px; 
+}
+
+.Round3 img {
+    max-width: 100%;
+    height: 400px;
+}
+
+.Round3 p {
+    display: block;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.Round3 a {
+    display: block;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.Round4 {
+    display: block;
+    background-color: #fefefe;
+    margin: 30px 60px 0px 60px;
+    height: 800px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 60px;
+}
+
+@media only screen and (max-width: 1920px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 30px;
+    }
+
+    a {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .gsce {
+        font-size: 25px;
+    }
+
+    .drop {
+        display: block;
+        cursor: pointer;
+
+    }
+    .drop .line {
+        width: 30px;
+        height: 3px;
+        background-color: #fefefe;
+        margin: 6px 0;
+    }
+
+    .navbar {
+        position: absolute;
+        height: 0;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 100vw;
+        background: #11101b;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .navbar.active {
+        height: 450px;
+        z-index: 1;
+    }
+
+    .navbar.active ul {
+        opacity: 1;
+    }
+
+    .navbar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .navbar ul li a {
+        margin-bottom: 12px;
+    }
+
+    .info {
+        padding-top: 17px;
+        font-size: 30px;
+    }
+
+    .Round1 {
+        height: 600px;
+    }
+
+    .Round1 img {
+        height: 200px;
+    }
+
+    .Round2 {
+        height: 600px;
+    }
+
+    .Round2 img {
+        height: 200px;
+    }
+
+    .Round3 {
+        height: 600px;
+    }
+
+    .Round3 img {
+        height: 180px;
+    }
+}
