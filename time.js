@@ -1,4 +1,4 @@
-var nextrace = new Date("Dec 11, 2022 14:00:00").getTime();
+var nextrace = new Date("Dec 18, 2022 14:00:00").getTime();
 var x = setInterval(function() {
     var sekarang = new Date().getTime();
     var lama = nextrace - sekarang;
@@ -8,7 +8,7 @@ var x = setInterval(function() {
     var menit = Math.floor(lama % (1000*60*60)/(1000*60));
     var detik = Math.floor(lama % (1000*60)/1000);
 
-    document.getElementById("sesilanjut").innerHTML = hari + " Hari " + jam + " Jam " + menit + " Menit " + detik + " Detik ";
+    document.getElementById("dyhrs").innerHTML = hari + " Hari " + " | " + jam + " Jam" + " | " + menit + " Menit " + " | "+ detik + " Detik";
 
     if(lama<0) {
         clearInterval(x);

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="HomeV2.css">
+    <title>GSCEx ID  - Home</title>
+    <link rel="stylesheet" href="HomeV2_gst.css">
 </head>
 <body>
     <header>
-        <div class="gsce">GSCEx Racing Academy</div>
+        <div class="gsce">GSCEx ID Championship</div>
         <div class="drop">
             <div class="line"></div>
             <div class="line"></div>
@@ -19,13 +19,10 @@
         <nav class="navbar">
             <ul>
                 <li>
-                    <a href="" class="active">Home</a>
+                    <a href="HomeV2_gst.html" class="active">Home</a>
                 </li>
                 <li>
                     <a href="https://gsceid.liveracers.com/Live" target="_blank">Live Timing</a>
-                </li>
-                <li>
-                    <a href="">Calendar</a>
                 </li>
                 <li>
                     <a href="">Championship</a>
@@ -33,13 +30,16 @@
                 <li>
                     <a href="">Drivers</a>
                 </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
     <section class="timer">
-    <p id="sesilanjut"></p>
+    <p id="dyhrs"></p>
     <p id="status">Menuju Event Selanjutnya</p>
     <a href="https://gsceid.liveracers.com/Live" target="_blank">GSCEx Season 11 Pre-Season Testing</a>
     </section>
@@ -47,9 +47,9 @@
     <div class="join">
         <span id="x">Join Us!</span>
     </div>
-    <a href="" target="_blank" class="discord">Discord</a>>
+    <a href="https://discord.gg/SrDqqYmZSU" target="_blank" class="discord">Discord</a>>
 
-    </main>
+</main>
 
 
 
@@ -58,8 +58,6 @@
         drop.onclick = function () {
             navbar = document.querySelector(".navbar");
             navbar.classList.toggle("active");
-            section = document.querySelector(".timer");
-            section.classList.toggle("active");
         }
 
         expand = document.querySelector(".join");

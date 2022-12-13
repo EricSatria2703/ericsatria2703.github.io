@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSCEx ID  - Calendar</title>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <header>
+        <div class="gsce">GSCEx ID Championship</div>
+        <div class="drop">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="HomeV2_drv.html">Home</a>
+                </li>
+                <li>
+                    <a href="https://gsceid.liveracers.com/Live" target="_blank">Live Timing</a>
+                </li>
+                <li>
+                    <a href="calendar.html" class="active">Calendar</a>
+                </li>
+                <li>
+                    <a href="">Championship</a>
+                </li>
+                <li>
+                    <a href="">Drivers</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <div class="info">GSCEx ID Season 11 Calendar</div>
+        <div class="Round1">
+            <p>Round 1 - Red Bull Ring Short</p>
+            <img src="images/Round1.png">
+            <p>Country: Austria</p>
+            <p>Length: 2.336 KM</p>
+            <p>Right Turns: 5</p>
+            <p>Left Turns: 1</p>
+            <p>Previous Winner: -</p>
+            <p>Download Link: <a href="">here</a></p>
+        </div>
+        <div class="Round2">
+            <p>Round 2 - Salvador</p>
+            <img src="images/Round2.png">
+            <p>Country: Brazil</p>
+            <p>Length: 2.724 KM</p>
+            <p>Right Turns: 4</p>
+            <p>Left Turns: 8</p>
+            <p>Previous Winner: Gerlandy Haqi</p>
+            <p>Download Link: <a href="">here</a></p>
+
+        </div>
+        <div class="Round3">
+            <p>Round 3 - Snetterton Circuit</p>
+            <img src="images/Round3.png">
+            <p>Country: United Kingdom</p>
+            <p>Length: 4.779 KM</p>
+            <p>Right Turns: 7</p>
+            <p>Left Turns: 5</p>
+            <p>Previous Winner: -</p>
+            <p>Download Link: <a href="">here</a></p>
+        </div>
+        <div class="Round4"></div>
+
+        <script>
+            drop = document.querySelector(".drop");
+            drop.onclick = function () {
+            navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
