@@ -8,6 +8,8 @@ login.onclick = function() {
     var hide1 = document.querySelector('.hideme');
     var hide2 = document.querySelector('.hideme1')
     var wrong = document.querySelector('.failed');
+    var wrong1 = document.querySelector('.failed1');
+    var wrong2 = document.querySelector('.failed2');
     if (username === "driver" && password === "1234") {
         success.classList.add('active');
         success1.classList.add('active');
@@ -16,7 +18,19 @@ login.onclick = function() {
         hide2.classList.add('active');
         wrong.classList.remove('active');
     }
-    else {
-        wrong.classList.add('active');
+    else if (username === "driver" && password != "1234") {
+       wrong.classList.add('active');
+       wrong1.classList.remove('active');
+       wrong2.classList.remove('active') 
+    }
+    else if (!username && !password) {
+        wrong2.classList.add('active');
+        wrong.classList.remove('active');
+        wrong1.classList.remove('active');
+    }
+    else if (!username) {
+        wrong1.classList.add('active');
+        wrong.classList.remove('active');
+        wrong2.classList.remove('active');
     }
 };
