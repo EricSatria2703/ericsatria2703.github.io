@@ -1,4 +1,4 @@
-var nextrace = new Date("Dec 18, 2022 14:00:00").getTime();
+var nextrace = new Date("Dec 25, 2022 14:00:00").getTime();
 var x = setInterval(function() {
     var sekarang = new Date().getTime();
     var lama = nextrace - sekarang;
@@ -12,7 +12,7 @@ var x = setInterval(function() {
 
     if(lama<0) {
         clearInterval(x);
-        document.getElementById("sesilanjut").innerHTML = "0 Hari " + "0 Jam " + "0 Menit " + "0 Detik " 
+        document.getElementById("dyhrs").innerHTML = "0 Hari " + "0 Jam " + "0 Menit " + "0 Detik " 
         document.getElementById("status").innerHTML = "Now Racing!!!";
     }
 
