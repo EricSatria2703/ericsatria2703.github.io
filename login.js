@@ -17,6 +17,8 @@ login.onclick = function() {
         hide1.classList.add('active');
         hide2.classList.add('active');
         wrong.classList.remove('active');
+        wrong1.classList.remove('active');
+        wrong2.classList.remove('active');
     }
     else if (username === "driver" && password != "1234") {
        wrong.classList.add('active');
