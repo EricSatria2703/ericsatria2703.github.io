@@ -1,4 +1,4 @@
-var nextrace = new Date("Dec 25, 2022 14:00:00").getTime();
+var nextrace = new Date("Jan 12, 2023 20:00:00").getTime();
 var x = setInterval(function() {
     var sekarang = new Date().getTime();
     var lama = nextrace - sekarang;
