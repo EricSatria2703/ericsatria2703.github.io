@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSCEx ID  - Home</title>
+    <link rel="stylesheet" href="chmp.css">
+</head>
+<body>
+    <header>
+        <div class="gsce">GSCEx ID Championship</div>
+        <div class="drop">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="HomeV2_drv.html">Home</a>
+                </li>
+                <li>
+                    <a href="https://gsceid.liveracers.com/Live" target="_blank">Live Timing</a>
+                </li>
+                <li>
+                    <a href="calendar.html">Calendar</a>
+                </li>
+                <li>
+                    <a href="chmp.html" class="active">Championship</a>
+                </li>
+                <li>
+                    <a href="">Drivers</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="info">
+        <h2>GSCEx Season 11</h2>
+        <p>Start date: 5-01-2023</p>
+        <p>Rounds: 4</p>
+        <p>Car: NGP Pickup Racing</p>
+        <p>Resources: <a href="" target="_blank">Car</a> <a href="" target="_blank">Sounds</a> <a href="calendar.html" target="_blank">Tracks</a></p>
+    </div>
+
+
+    <table class="chmp-table">
+        <thead>
+        <tr><th>No</th><th>Name</th><th>Team</th><th>Points</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>1.</td><td>E. Satria</td><td>Random Racing Team</td><td>25</td></tr>
+        <tr><td>2.</td><td>M. Luqman</td><td>M92 Motorsport</td><td>18</td></tr>
+        <tr><td>3.</td><td>S. Galih</td><td>Pembalap Daring Indonesia</td><td>15</td></tr>
+        <tr><td>4.</td><td>G. Haqi</td><td>Random Racing Team</td><td>12</td></tr>
+        <tr><td>5.</td><td>A. Ramsay</td><td>Emirates GPEA Racing Team</td><td>10</td></tr>
+        <tr><td>6.</td><td>RafAzk</td><td>Numpang Ngakak Racing</td><td>8</td></tr>
+        <tr><td>7.</td><td>K. Haemin</td><td>Emirates GPEA Racing Team</td><td>6</td></tr>
+        <tr><td>8.</td><td>R. Prasetya</td><td>Bongo Motorsport</td><td>4</td></tr>
+        <tr><td>9.</td><td>Jusmin</td><td>Pembalap Daring Indonesia</td><td>2</td></tr>
+        <tr><td>10.</td><td>M. Tri Suteja</td><td>M92 Motorsport</td><td>1</td></tr>
+        <tr><td>11.</td><td>A. Ghanie</td><td>Mixue Racing Team</td><td>0</td></tr>
+        <tr><td>12.</td><td>Kanzaini</td><td>NMRBMEP GSCEx Racing Team</td><td>0</td></tr>
+        <tr><td>13.</td><td>H. Ramadhan</td><td>Mixue Racing Team</td><td>0</td></tr>
+        <tr><td>14.</td><td>M. Naja</td><td>Naja Racing Team</td><td>0</td></tr>
+        </tbody>
+    </table>
+
+
+
+
+    <script>
+        drop = document.querySelector(".drop");
+        drop.onclick = function () {
+            navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("active");
+        }
+
+        expand = document.querySelector(".join");
+        expand.onclick = function () {
+            ubah = document.querySelector(".join");
+            ubah.classList.toggle("active");
+            if (expand.classList.contains("active")) {
+            document.getElementById("x").innerHTML = "&#10006;";
+            }
+            else {
+                document.getElementById("x").innerHTML = "Join Us!"
+            }
+            muncul = document.querySelector(".discord");
+            muncul.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
