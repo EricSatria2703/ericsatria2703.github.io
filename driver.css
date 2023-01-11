@@ -60,18 +60,16 @@ header {
 }
 
 .info {
-    background-color: rgba(254, 254, 254, 0.8);
-    color: #11101b;
+    display: flex;
+    justify-content: center;
+    background-color: #fefefe;
     margin: 30px 60px 0px 60px;
-    padding: 10px 0px 0px 15px;
-    width: 350px;
-    height: 200px;
+    height: 100px;
     border-radius: 10px;
-    font-size: 25px;
-}
-
-.info p {
-    margin-top: 4px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .chmp-table {
@@ -86,10 +84,11 @@ header {
     overflow-x: scroll;
 }
 
+
 .chmp-table thead tr {
     background-color: rgb(20, 49, 118);
     color: #fefefe;
-    text-align: left;
+    text-align: center;
 }
 
 .chmp-table th, .chmp-table td {
@@ -97,7 +96,7 @@ header {
 }
 
 .chmp-table tbody tr {
-    text-align: left;
+    text-align: center;
     font-weight: lighter;
     border-bottom: #f3f3f3;
 }
@@ -114,52 +113,28 @@ header {
     border-bottom:7px solid rgb(20, 49, 118);
 }
 
-.result1 {
-    background-color: rgba(254, 254, 254, 0.8);
-    color: #11101b;
-    margin: 30px 60px 0px 60px;
-    padding: 10px 0px 0px 15px;
-    width: 350px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 25px;
-}
-
 @media only screen and (max-width: 1920px) {
     header {
         padding: 0 50px;
     }
-
-    .join {
-        position: absolute;
-        bottom: 115px;
-        right: 115px;
-    }
 }
 
-
-@media only screen and (max-width: 1480px) {
-    header {
-        padding: 0 30px;
-    }
-
-    .navbar a {
-        display: none;
-    }
-
-    .info {
-        margin-left: 30px;
-    }
-
-    .result1 {
-        margin-left: 30px;
-    }
-
+@media only screen and (max-width: 1420px) {
     .chmp-table {
         min-width: 1000px;
         margin-left: 30px;
         margin-right: 15px;
-        font-size: 25px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 30px;
+    }
+
+    a {
+        display: none;
     }
 }
 @media only screen and (max-width: 1100px) {
@@ -213,20 +188,15 @@ header {
     }
 
     .info {
-        width: 350px;
-        height: 200px;
-        margin-left: 15px;
-        margin-right: 15px;
+        padding-top: 30px;
+        font-size: 30px;
+        margin: 30px 30px 0px 30px;
     }
 
     .chmp-table {
-        min-width: 100px;
+        min-width: 50px;
         margin-left: 15px;
         margin-right: 15px;
-        font-size: 12px;
-    }
-
-    .result1 {
-        margin-left: 15px;
+        font-size: 8px;
     }
 }
