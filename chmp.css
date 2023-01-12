@@ -129,12 +129,6 @@ header {
     header {
         padding: 0 50px;
     }
-
-    .join {
-        position: absolute;
-        bottom: 115px;
-        right: 115px;
-    }
 }
 
 
