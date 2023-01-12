@@ -76,24 +76,6 @@
         </tbody>
     </table>
 
-    <script>
-        drop = document.querySelector(".drop");
-        drop.onclick = function () {
-            navbar = document.querySelector(".navbar");
-            navbar.classList.toggle("active");
-        }
-
-        expand = document.querySelector(".join");
-        expand.onclick = function () {
-            ubah = document.querySelector(".join");
-            ubah.classList.toggle("active");
-            if (expand.classList.contains("active")) {
-            document.getElementById("x").innerHTML = "&#10006;";
-            }
-            else {
-                document.getElementById("x").innerHTML = "Join Us!"
-            }
-            muncul = document.querySelector(".discord");
-            muncul.classList.toggle("active");
-        }
-    </script>
+    <script src="nav.js"></script>
+</body>
+</html>
